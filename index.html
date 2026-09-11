@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Bihar News Point</title>
-    <meta name="description" content="Privacy Policy for Bihar News Point Android application. Learn how we handle your data, Meta Audience Network ads, and offline reading.">
+    <title>Privacy Policy &amp; Contact Information - Bihar News Point</title>
+    <meta name="description" content="Privacy Policy and official contact information for Bihar News Point Android application by Zorif.">
+    <link rel="canonical" href="https://zorifla.github.io/biharnewspoint/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary-green: #1B5E20;
@@ -26,6 +27,10 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
@@ -80,12 +85,39 @@
             font-weight: 400;
         }
 
+        .header-action-row {
+            margin-top: 16px;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .header-contact-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #FFFFFF;
+            color: var(--primary-green) !important;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 0.88rem;
+            font-weight: 700;
+            text-decoration: none !important;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            transition: all 0.2s ease;
+        }
+
+        .header-contact-btn:hover {
+            background: #E8F5E9;
+            transform: translateY(-1px);
+        }
+
         .last-updated {
             display: inline-block;
-            margin-top: 14px;
             font-size: 0.85rem;
             color: rgba(255, 255, 255, 0.85);
-            background: rgba(0, 0, 0, 0.15);
+            background: rgba(0, 0, 0, 0.18);
             padding: 4px 12px;
             border-radius: 6px;
         }
@@ -230,36 +262,81 @@
             text-decoration: underline;
         }
 
-        /* Contact Box */
+        /* Contact Section (#contact Anchor & Highlight) */
+        #contact {
+            scroll-margin-top: 36px;
+            transition: all 0.3s ease;
+        }
+
+        #contact:target,
+        .contact-highlight {
+            background-color: #F0FDF4;
+            border: 2px solid var(--primary-green) !important;
+            border-radius: 14px;
+            padding: 20px;
+            box-shadow: 0 4px 18px rgba(27, 94, 32, 0.15);
+            animation: pulseFade 1.8s ease-in-out;
+        }
+
+        @keyframes pulseFade {
+            0% { background-color: #DCFCE7; transform: scale(1.01); }
+            50% { background-color: #F0FDF4; }
+            100% { transform: scale(1); }
+        }
+
         .contact-box {
             background: var(--accent-green);
-            border: 1px solid #C8E6C9;
+            border: 1.5px solid #A7F3D0;
             border-radius: 12px;
-            padding: 20px;
-            margin-top: 24px;
+            padding: 24px;
+            margin-top: 16px;
             text-align: center;
         }
 
         .contact-box p {
             color: var(--primary-dark);
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             font-weight: 500;
         }
 
+        .contact-details-list {
+            margin: 14px auto 16px auto;
+            max-width: 440px;
+            text-align: left;
+            background: #FFFFFF;
+            padding: 12px 18px;
+            border-radius: 8px;
+            border: 1px solid #D1FAE5;
+            font-size: 0.9rem;
+        }
+
+        .contact-details-list div {
+            margin-bottom: 6px;
+            color: var(--text-dark);
+        }
+
+        .contact-details-list strong {
+            color: var(--primary-green);
+        }
+
         .contact-email {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
             background: var(--primary-green);
             color: #FFFFFF !important;
-            padding: 10px 20px;
+            padding: 11px 24px;
             border-radius: 8px;
-            font-weight: 600;
-            font-size: 0.95rem;
+            font-weight: 700;
+            font-size: 1rem;
             text-decoration: none !important;
-            box-shadow: 0 2px 6px rgba(27, 94, 32, 0.2);
+            box-shadow: 0 3px 8px rgba(27, 94, 32, 0.25);
+            transition: all 0.2s ease;
         }
 
         .contact-email:hover {
             background: var(--primary-dark);
+            transform: translateY(-1px);
         }
 
         /* Footer */
@@ -297,10 +374,13 @@
     <!-- Header Banner -->
     <header class="site-header">
         <div class="header-content">
-            <div class="app-badge">Official Legal Document</div>
-            <h1>Privacy Policy</h1>
-            <p><strong>Bihar News Point</strong> &bull; Free Hindi News &amp; RSS Aggregator</p>
-            <span class="last-updated">Last Updated: September 8, 2026 &bull; Effective Immediately</span>
+            <div class="app-badge">Official Legal &amp; Policy Document</div>
+            <h1>Bihar News Point</h1>
+            <p>Free Hindi News &amp; RSS Aggregator &bull; Published by <strong>Zorif</strong></p>
+            <div class="header-action-row">
+                <span class="last-updated">Last Updated: September 11, 2026</span>
+                <a href="#contact" class="header-contact-btn">📞 Contact Us / संपर्क करें</a>
+            </div>
         </div>
     </header>
 
@@ -328,7 +408,7 @@
             <section>
                 <h2>1. Introduction</h2>
                 <p>
-                    Welcome to <strong>Bihar News Point</strong> ("the App", "we", "us", or "our"). We are committed to safeguarding your personal privacy while delivering fast, transparent, and accurate news aggregation for the state of Bihar and national headlines.
+                    Welcome to <strong>Bihar News Point</strong> ("the App", "we", "us", or "our"), published and operated by <strong>Zorif</strong>. We are committed to safeguarding your personal privacy while delivering fast, transparent, and accurate news aggregation for the state of Bihar and national headlines.
                 </p>
                 <p>
                     This Privacy Policy informs users of our policies regarding the collection, use, and disclosure of information when you use our Android mobile application. By downloading, accessing, or using Bihar News Point, you agree to the collection and use of information in accordance with this policy.
@@ -364,7 +444,7 @@
             <section>
                 <h2>3. Third-Party Advertising (Meta Audience Network)</h2>
                 <p>
-                    To keep Bihar News Point 100% free for all readers, we display banner advertisements supplied by <strong>Meta Audience Network</strong> (operated by Meta Platforms, Inc., formerly Facebook).
+                    To keep Bihar News Point 100% free for all readers, we display banner and interstitial advertisements supplied by <strong>Meta Audience Network</strong> (operated by Meta Platforms, Inc., formerly Facebook).
                 </p>
 
                 <div class="ad-partner-box">
@@ -474,15 +554,31 @@
                 </p>
             </section>
 
-            <!-- Section 11: Contact Us -->
-            <section>
+            <!-- Section 11: Contact Information (Target for #contact) -->
+            <section id="contact">
+                <a id="contact-us" name="contact"></a>
                 <h2>11. Contact Information</h2>
                 <p>
-                    If you have any questions, concerns, feedback, or copyright inquiries regarding this Privacy Policy or Bihar News Point, please contact us at:
+                    If you have any questions, concerns, feedback, technical inquiries, or copyright grievances regarding this Privacy Policy or Bihar News Point, please contact us:
                 </p>
                 <div class="contact-box">
-                    <p><strong>Bihar News Point Developer &amp; Support Team</strong></p>
-                    <p>Email: <a href="mailto:zorifla@gmail.com" class="contact-email">zorifla@gmail.com</a></p>
+                    <p style="font-size: 1.15rem; font-weight: 700; color: var(--primary-dark);">
+                        Bihar News Point Developer &amp; Support Team
+                    </p>
+
+                    <div class="contact-details-list">
+                        <div><strong>Legal Entity / Developer:</strong> Zorif</div>
+                        <div><strong>Application:</strong> Bihar News Point</div>
+                        <div><strong>Category:</strong> News &amp; Magazine Aggregator</div>
+                        <div><strong>Official Email:</strong> zorifla@gmail.com</div>
+                        <div><strong>Response Time:</strong> Within 24–48 hours</div>
+                    </div>
+
+                    <p style="margin-top: 14px;">
+                        <a href="mailto:zorifla@gmail.com?subject=Bihar%20News%20Point%20-%20Support%20%26%20Feedback" class="contact-email">
+                            ✉️ zorifla@gmail.com
+                        </a>
+                    </p>
                 </div>
             </section>
 
@@ -491,9 +587,30 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Bihar News Point. All rights reserved.</p>
-        <p style="margin-top: 6px; font-size: 0.78rem;">This privacy policy is hosted in compliance with Google Play Developer Policy and Meta Audience Network terms.</p>
+        <p>&copy; 2026 <strong>Bihar News Point</strong>. All rights reserved.</p>
+        <p>Published by <strong>Zorif</strong></p>
+        <p style="margin-top: 6px; font-size: 0.78rem;">This privacy policy is hosted in compliance with Google Play Developer Policy, News and Magazines Policy, and Meta Audience Network terms.</p>
     </footer>
+
+    <!-- Script to automatically scroll to & highlight contact information when #contact is called -->
+    <script>
+        function handleAnchorNavigation() {
+            var hash = window.location.hash;
+            if (hash === '#contact' || hash === '#contact-us') {
+                var contactSection = document.getElementById('contact');
+                if (contactSection) {
+                    setTimeout(function() {
+                        contactSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        contactSection.classList.add('contact-highlight');
+                    }, 120);
+                }
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', handleAnchorNavigation);
+        window.addEventListener('load', handleAnchorNavigation);
+        window.addEventListener('hashchange', handleAnchorNavigation);
+    </script>
 
 </body>
 </html>
